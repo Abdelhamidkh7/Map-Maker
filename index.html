@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tile Placement Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="title">Potato map</div>
+    <div class="flex-container">
+        <div class="con-con">
+            <div id="game-container"></div>
+        </div>
+        <div class="right-section">
+            <div class="header">
+
+
+                <div class="scoreboard">
+                    <div id="spring-score">
+                        <span class="season-name">Spring:</span>
+                        <span class="points">0 points</span>
+                    </div>
+                    <div id="summer-score">
+                        <span class="season-name">Summer:</span>
+                        <span class="points">0 points</span>
+                    </div>
+                    <div id="autumn-score">
+                        <span class="season-name">Autumn:</span>
+                        <span class="points">0 points</span>
+                    </div>
+                    <div id="winter-score">
+                        <span class="season-name">Water:</span>
+                        <span class="points">0 points</span>
+                    </div>
+                </div>
+                <div id="total-score">Total: </div>
+            </div>
+
+            <div class="game-sidebar">
+                <div class="sndrow">
+                    <div id="current-season">Current season: Spring (AB)</div>
+                    <div id="fleximgs">
+                        <div class="first-row">
+                            <div id="img-1" class="img">
+                                <div id="miss1">(Score: 0)</div>
+                            </div>
+                            <div id="img-2" class="img">
+                                <div id="miss2">(Score: 0)</div>
+                            </div>
+                        </div>
+                        <div class="second-row">
+                            <div id="img-3" class="img">
+                                <div id="miss3">(Score: 0)</div>
+                            </div>
+                            <div id="img-4" class="img">
+                                <div id="miss4">(Score: 0)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elapsed">Elapsed Time in Current Season: 0/7</div>
+                <div class="current-element-container">
+                    <div class="designmin">
+                        <div class="element-count" style="margin-left: 140px;">2</div>
+                        <div class="current-element-display">
+                        </div>
+
+                    </div>
+                    <div class="btns">
+                        <button class="rotate-button">Rotate</button>
+                        <button class="flip-button">Flip</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div id="endGamePopup">
+        <h1>Congratulations!</h1>
+        <p id="finalScore"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
